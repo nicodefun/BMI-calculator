@@ -1,0 +1,120 @@
+.limitation-container {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 1.5rem;
+  padding-bottom: 2rem;
+}
+.title-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.title-div h3 {
+  padding-left: 1rem;
+  margin: 0;
+}
+.card {
+  margin-bottom: 2rem;
+}
+.limitation-text {
+  padding: 1rem;
+}
+.limitation-text h2,
+.limitation-text p {
+  text-align: center;
+}
+.limitation-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .limitation-text {
+    padding: 2rem;
+  }
+  .limitation-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Adjust the gap between items */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove any default padding */
+  }
+  .limitation-container li {
+    width: 100%; /* Occupy the full width of each grid cell */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .limitation-container .card:nth-child(5) {
+    grid-column: 1 / span 2; /* Make these items span two columns */
+    width: 50%; /* Set the width to 50% for these items */
+    justify-self: center;
+  }
+  .title-div {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main {
+    margin: 3rem 5rem;
+    position: relative;
+  }
+  .limitation-text {
+    width: 50vw;
+  }
+  .limitation-text h2,
+  .limitation-text p {
+    text-align: left;
+    max-width: 30vw;
+  }
+  .limitation-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 5rem;
+  }
+  .limitation-container .card {
+    width: 22rem;
+  }
+  .desc-p {
+    padding: 0;
+  }
+  .limitation-container .card:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    right: 5rem;
+  }
+  .limitation-container .card:nth-child(2),
+  .limitation-container .card:nth-child(3) {
+    margin-top: 5rem;
+    text-align: center; /* Center the text horizontally */
+    justify-self: right;
+  }
+  .limitation-container .card:nth-child(4){
+    justify-self: right;
+  }
+  .limitation-text h2{
+    font-size: 3.5rem;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .limitation-container .card:nth-child(1) {
+    position: absolute;
+    top: 90px;
+    right: 15rem;
+  }
+  .limitation-container .card:nth-child(2){
+    margin-right: -10rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .limitation-container .card:nth-child(1) {
+    position: absolute;
+    top: 40px;
+    right: 15rem;
+  }
+
+}

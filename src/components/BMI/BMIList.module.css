@@ -1,0 +1,52 @@
+.BMI-List{
+    list-style: none;
+    padding: 1rem 1.5rem;
+    background-color:  rgba(214, 252, 254, 0.15);
+}
+.list-img img{
+    width: 64px;
+}
+.BMI-List li{
+    margin-bottom:2.5rem;
+}
+@media screen and (min-width: 500px) and (max-width: 768px){ 
+    .BMI-List{
+        margin-top: 2rem;
+    }
+    li{
+        display: flex;
+        align-items: center;
+    }
+
+    .right h3{
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        margin: 0;
+    }
+    .right p{
+        padding: 0 2rem 1.5rem 2rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+  }
+  @media screen and (min-width: 769px){ 
+    .BMI-List{
+        display: flex;
+        margin: 5rem 5rem 5rem 5rem;
+        justify-content: space-between;
+    }
+    .BMI-List li{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .right h3{
+        font-size: 1.5rem;
+        margin: 2rem 0;
+    }
+    .right p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+  }
